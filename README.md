@@ -1,30 +1,23 @@
-dbyll
-=====
+Minimal-Blog 
+============
 
-Open source stylish, minimalistic theme for jekyll.  
-Demo: http://dbtek.github.io/dbyll/
+A responsive blog theme for Jekyll. You can see it in use [here](http://nickw.it).
 
-### Features
-- Pagination. (New)
-- Syntax highlighting with pygments. (New)
-- Responsive layout.
-- Supports tags and categories.
-- Social profile and bio of author.
-- Bootstrap based.
-- Glyphicon and Font-Awesome Icons.
+## Features & Preferences
 
+Things to be aware of, feel free to disable:
 
-### Download
-* [Download dbyll](https://github.com/dbtek/dbyll/archive/master.zip)
+ * Syntax highlighting is *client-side*, using the [jekyll prism plugin](https://github.com/gmurphey/jekyll-prism-plugin). If you want to make sure you have enough languages covered in the stylesheet (`css/prism.custom.css`), make your own at [the Prism site](http://prismjs.com/download.html).
+ * [FitVids.js](http://fitvidsjs.com), and consequently Zepto.js are included so embedded videos will fit within a post. Appreciate this may be unwanted bloat. To remove, see bottom of `_layouts/default.html`.
+ * Tags listed in the frontmatter of a post are listed on the archive/index page.
+ * Be sure to check everything in `_config.yml`.
 
-### Snapshots
+## Rebuilding Styles
 
-![dbyll-screenshot](http://dbtek.github.io/dbyll/assets/media/dbyll-ss.png)
+The `.less` source file is in `css/_less`. Build using [LESS](http://lesscss.org) like so:
 
-### License
-- [MIT](http://opensource.org/licenses/MIT)
+    lessc css/_less/styles.less css/styles.css
 
+## Todo
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dbtek/dbyll/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+ * Build script - don't like the unminifed CSS and separate JS files
