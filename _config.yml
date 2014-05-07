@@ -5,3 +5,4 @@ location: Milwaukee, WI
 github: https://github.com/ux-feed
 markdown: redcarpet
 pygments: false
+permalink: /:year/:month/:title
